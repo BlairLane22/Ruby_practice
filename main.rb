@@ -33,14 +33,17 @@ end
 puts adding_loop(10)
 
 
-
 def file_adding(name)
-	File.new "#{name}.txt", "r"
+	File.new "#{name}.txt", "w"
 	File.open("#{name}.txt", "w") {|f| f.write( multiple(rand(1..100), rand(1..100)) ) }
 
 	# File.delete "second.txt"
 end
-file_adding("first")
+
+# print "Name the file: "
+# file_name = gets
+# file_adding(file_name)
+file_adding("First")
 
 
 puts "What is your first name: "
@@ -49,16 +52,18 @@ first_name = gets
 puts "Hello #{first_name}"
 
 
+array1 = ["Blair", "Tim", "Henry"]
+array2 = ["Mum", "Dad", "Taeeun", "John", "Jacob"]
 
+for i in 0..array2.length
+	array1 << array2[i]
+end
 
+for a in 0..array1.length
+	print "#{array1[a]}\t"
+end
 
+puts
 
-
-
-
-
-
-
-
-
-
+elements = ["ruby", "diamond", "gold"]
+puts elements.last
