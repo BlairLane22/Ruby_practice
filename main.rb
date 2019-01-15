@@ -48,7 +48,6 @@ file_adding("First")
 
 puts "What is your first name: "
 first_name = gets
-
 puts "Hello #{first_name}"
 
 
@@ -67,3 +66,40 @@ puts
 
 elements = ["ruby", "diamond", "gold"]
 puts elements.last
+
+
+count = 9
+count ||= 0     # count = count || 0
+puts count
+
+count += 2      # count = count + 1
+count *= 2			# count = count * 2
+count -= 2			# count = count - 2
+count /= 2			# count = count / 2
+
+
+price = 99.99
+discount = 0.25
+price *= discount    #  price = price * discount
+
+
+# class Person
+# 	def self.for_dave
+# 		Person.new(name: "Dave")
+# 	end
+# end
+#
+# class Employee < Person
+# end
+#
+# puts Employee.for_dave
+
+
+
+puts 2 < 3 ? puts 2 : puts 3
+# This is another way of doing whats above
+if 2 < 3
+	puts 2
+else
+	puts 3
+end
